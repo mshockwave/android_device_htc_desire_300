@@ -1,2 +1,2 @@
-CM10.2 device tree for HTC Desire X
+CM10.2 device tree for HTC Desire 300
 ===================================
