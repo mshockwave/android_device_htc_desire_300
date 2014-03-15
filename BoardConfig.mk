@@ -48,7 +48,7 @@ TARGET_KERNEL_SOURCE := kernel/htc/protou
 TARGET_KERNEL_CONFIG := atis112_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
-BOARD_KERNEL_BASE := 0x03200000
+BOARD_KERNEL_BASE := 0x03100000
 BOARD_KERNEL_PAGE_SIZE := 2048
 
 # Additional libraries
