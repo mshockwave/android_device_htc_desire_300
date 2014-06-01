@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=htc
-DEVICE=protou
+DEVICE=desire_300
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

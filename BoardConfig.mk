@@ -14,7 +14,7 @@
 #
 
 # inherit from the proprietary version
--include vendor/htc/protou/BoardConfigVendor.mk
+-include vendor/htc/desire_300/BoardConfigVendor.mk
 
 USE_CAMERA_STUB := true
 BOARD_VENDOR := htc
@@ -37,14 +37,14 @@ TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := cortex-a9
 ARCH_ARM_HIGH_OPTIMIZATION := true
 ARCH_ARM_HAVE_NEON := true
-TARGET_BOOTLOADER_BOARD_NAME := protou
+TARGET_BOOTLOADER_BOARD_NAME := desire_300
 
 # Target information
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/protou
+TARGET_KERNEL_SOURCE := kernel/htc/desire_300
 TARGET_KERNEL_CONFIG := atis112_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
@@ -57,10 +57,10 @@ BOARD_PREBUILT_LIBAUDIO := false
 
 # Fix this up by examining /proc/mtd on a running device
 TARGET_USERIMAGES_USE_EXT4 := true
-BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8909824
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1004535296
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 1291845120
+BOARD_BOOTIMAGE_PARTITION_SIZE := 16776192
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16776704
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1207959552
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Vold
@@ -73,13 +73,13 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/protou/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/htc/protou/bluetooth/vnd_protou.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/desire_300/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/htc/desire_300/bluetooth/vnd_desire_300.txt
 
-TARGET_SPECIFIC_HEADER_PATH := device/htc/protou/include
+TARGET_SPECIFIC_HEADER_PATH := device/htc/desire_300/include
 
 # OpenGL drivers config file path
-BOARD_EGL_CFG := device/htc/protou/config/egl.cfg
+BOARD_EGL_CFG := device/htc/desire_300/config/egl.cfg
 
 # Wifi related definitions
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
@@ -130,7 +130,7 @@ TARGET_USES_ION := false
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/htc/protou/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/htc/desire_300/recovery.fstab
 
 # RIL
 BOARD_USE_NEW_LIBRIL_HTC := true

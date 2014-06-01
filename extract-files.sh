@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=htc
-DEVICE=protou
+DEVICE=desire_300
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 

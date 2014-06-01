@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/protou.mk
+    $(LOCAL_DIR)/desire_300.mk
